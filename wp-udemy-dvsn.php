@@ -1,12 +1,12 @@
 <?php
 /**
  * Plugin Name:     Udemy™ - Online Learning Courses
- * Plugin URI:      https://wordpress.org/plugins/wp-udemy/
+ * Plugin URI:      https://wordpress.org/plugins/wp-udemy-dvsn/
  * Description:     Display Online Learning Courses from the Udemy™ platform inside your WordPress posts and pages.
  * Version:         1.3.0
  * Author:          KryptoniteWP
  * Author URI:      https://kryptonitewp.com
- * Text Domain:     wp-udemy
+ * Text Domain:     wp-udemy-dvsn
  *
  * @package         UFWP
  * @author          flowdee
@@ -119,22 +119,22 @@ if ( ! class_exists( 'UFWP' ) ) {
             $lang_dir = apply_filters( 'ufwp_languages_directory', $lang_dir );
 
             // Traditional WordPress plugin locale filter
-            $locale = apply_filters( 'plugin_locale', get_locale(), 'wp-udemy' );
-            $mofile = sprintf( '%1$s-%2$s.mo', 'wp-udemy', $locale );
+            $locale = apply_filters( 'plugin_locale', get_locale(), 'wp-udemy-dvsn' );
+            $mofile = sprintf( '%1$s-%2$s.mo', 'wp-udemy-dvsn', $locale );
 
             // Setup paths to current locale file
             $mofile_local  = $lang_dir . $mofile;
-            $mofile_global = WP_LANG_DIR . '/wp-udemy/' . $mofile;
+            $mofile_global = WP_LANG_DIR . '/wp-udemy-dvsn/' . $mofile;
 
             if ( file_exists( $mofile_global ) ) {
-                // Look in global /wp-content/languages/wp-udemy/ folder
-                load_textdomain( 'wp-udemy', $mofile_global );
+                // Look in global /wp-content/languages/wp-udemy-dvsn/ folder
+                load_textdomain( 'wp-udemy-dvsn', $mofile_global );
             } elseif( file_exists( $mofile_local ) ) {
-                // Look in local /wp-content/plugins/wp-udemy/languages/ folder
-                load_textdomain( 'wp-udemy', $mofile_local );
+                // Look in local /wp-content/plugins/wp-udemy-dvsn/languages/ folder
+                load_textdomain( 'wp-udemy-dvsn', $mofile_local );
             } else {
                 // Load the default language files
-                load_plugin_textdomain( 'wp-udemy', false, $lang_dir );
+                load_plugin_textdomain( 'wp-udemy-dvsn', false, $lang_dir );
             }
         }
     }

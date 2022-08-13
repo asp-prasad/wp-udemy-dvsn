@@ -46,7 +46,7 @@ function ufwp_widget_do_shortcode( $atts = array() ) {
         echo do_shortcode( $shortcode );
 
     } else {
-        _e( 'Shortcode arguments missing.', 'wp-udemy' );
+        _e( 'Shortcode arguments missing.', 'wp-udemy-dvsn' );
     }
 }
 

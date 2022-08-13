@@ -23,7 +23,7 @@ function ufwp_admin_scripts() {
      */
     $screen = get_current_screen();
 
-    if ( ! empty( $screen->base ) && ( $screen->base == 'settings_page_wp-udemy' || $screen->base == 'widgets' ) ) {
+    if ( ! empty( $screen->base ) && ( $screen->base == 'settings_page_wp-udemy-dvsn' || $screen->base == 'widgets' ) ) {
 
         wp_enqueue_script( 'ufwp-admin', UFWP_URL . 'assets/dist/js/admin.js', array( 'jquery' ), UFWP_VER );
         wp_enqueue_style( 'ufwp-admin', UFWP_URL . 'assets/dist/css/admin.css', false, UFWP_VER );

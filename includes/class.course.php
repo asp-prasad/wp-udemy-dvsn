@@ -75,7 +75,7 @@ if (!class_exists('UFWP_Course')) {
             $attributes = array();
 
             // HTML ID
-            //$output .= ' id="wp-udemy-course-' . $this->get_id() . '"';
+            //$output .= ' id="wp-udemy-dvsn-course-' . $this->get_id() . '"';
 
             // Course ID
             $attributes['course-id'] = $this->get_id();
@@ -351,7 +351,7 @@ if (!class_exists('UFWP_Course')) {
             if ( 'instructor' === $options_details )
                 return $this->get_instructors();
 
-            return __('No info available', 'wp-udemy');
+            return __('No info available', 'wp-udemy-dvsn');
         }
 
         /**

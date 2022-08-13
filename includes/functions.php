@@ -259,7 +259,7 @@ add_action('ufwp_wp_scheduled_events', 'ufwp_scheduled_events');
 function ufwp_get_courses( $atts ) {
 
     if ( ! function_exists('curl_version') )
-        return '<p style="color: darkorange; font-weight: bold;">' . __( 'Please activate PHP curl in order to display Udemy courses.', 'wp-udemy' ) . '</p>';
+        return '<p style="color: darkorange; font-weight: bold;">' . __( 'Please activate PHP curl in order to display Udemy courses.', 'wp-udemy-dvsn' ) . '</p>';
 
     // Defaults
     $args = array();
@@ -406,7 +406,7 @@ function ufwp_display_courses( $courses = array(), $args = array() ) {
     }
 
     if ( ! file_exists( $file ) ) {
-        _e( 'Template not found.', 'wp-udemy' );
+        _e( 'Template not found.', 'wp-udemy-dvsn' );
     }
 
     echo '</div>';

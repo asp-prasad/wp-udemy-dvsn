@@ -1,11 +1,11 @@
 # Online Learning Courses
-[![Plugin Version](https://img.shields.io/wordpress/plugin/v/wp-udemy.svg)](https://wordpress.org/plugins/wp-udemy/) [![WordPress Version Compatibility](https://img.shields.io/wordpress/v/wp-udemy.svg)](https://wordpress.org/plugins/wp-udemy/) [![Downloads](https://img.shields.io/wordpress/plugin/dt/wp-udemy.svg)](https://wordpress.org/plugins/wp-udemy/) [![Rating](https://img.shields.io/wordpress/plugin/r/wp-udemy.svg)](https://wordpress.org/plugins/wp-udemy/)
+[![Plugin Version](https://img.shields.io/wordpress/plugin/v/wp-udemy-dvsn.svg)](https://wordpress.org/plugins/wp-udemy-dvsn/) [![WordPress Version Compatibility](https://img.shields.io/wordpress/v/wp-udemy-dvsn.svg)](https://wordpress.org/plugins/wp-udemy-dvsn/) [![Downloads](https://img.shields.io/wordpress/plugin/dt/wp-udemy-dvsn.svg)](https://wordpress.org/plugins/wp-udemy-dvsn/) [![Rating](https://img.shields.io/wordpress/plugin/r/wp-udemy-dvsn.svg)](https://wordpress.org/plugins/wp-udemy-dvsn/)
 
 Display Online Learning Courses from the best platform inside your WordPress posts and pages.
 
 ## Description
 
-[Official WordPress.org Plugin](https://wordpress.org/plugins/wp-udemy/)
+[Official WordPress.org Plugin](https://wordpress.org/plugins/wp-udemy-dvsn/)
 
 ## Upgrade to PRO Version
 
@@ -18,7 +18,7 @@ Do you want to earn money with course sales? The PRO version extends the plugin 
 *   Highlight New Courses
 *   Custom Templates
 
-I would be happy if you give it a chance! [Upgrade to PRO Version](https://kryptonitewp.com/downloads/wp-udemy-pro/?utm_source=github&utm_medium=textlink&utm_campaign=Online%20Learning%20Courses)
+I would be happy if you give it a chance! [Upgrade to PRO Version](https://kryptonitewp.com/downloads/wp-udemy-dvsn-pro/?utm_source=github&utm_medium=textlink&utm_campaign=Online%20Learning%20Courses)
 
 ## More information
 

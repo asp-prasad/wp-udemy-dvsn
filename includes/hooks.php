@@ -34,11 +34,11 @@ function ufwp_maybe_add_credits_to_the_content( $content ) {
 
     if ( ufwp_has_plugin_content() && $credits ) {
 
-        $credits_url = apply_filters( 'ufwp_credits_url', 'https://wordpress.org/plugins/wp-udemy/' );
+        $credits_url = apply_filters( 'ufwp_credits_url', 'https://wordpress.org/plugins/wp-udemy-dvsn/' );
 
-        $credits_link = '<a href="' . $credits_url . '" target="_blank" rel="nofollow" title="' . __('Udemy for WordPress', 'wp-udemy') . '">' . __('Udemy for WordPress', 'wp-udemy') . '</a>';
+        $credits_link = '<a href="' . $credits_url . '" target="_blank" rel="nofollow" title="' . __('Udemy for WordPress', 'wp-udemy-dvsn') . '">' . __('Udemy for WordPress', 'wp-udemy-dvsn') . '</a>';
 
-        $content .= '<p><small>' . __('Presentation of the video courses powered by ', 'wp-udemy') . $credits_link . '.</small></p>';
+        $content .= '<p><small>' . __('Presentation of the video courses powered by ', 'wp-udemy-dvsn') . $credits_link . '.</small></p>';
     }
 
     return $content;

@@ -100,7 +100,7 @@ function ufwp_is_plugin_admin_area() {
 
     $screen = get_current_screen();
 
-    return ( strpos( $screen->id, 'ufwp' ) !== false || strpos( $screen->id, 'wp-udemy' ) !== false ) ? true : false;
+    return ( strpos( $screen->id, 'ufwp' ) !== false || strpos( $screen->id, 'wp-udemy-dvsn' ) !== false ) ? true : false;
 }
 
 /**

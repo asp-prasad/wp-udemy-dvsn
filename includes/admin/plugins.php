@@ -20,9 +20,9 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  */
 function ufwp_action_links( $links, $file ) {
 
-    $settings_link = '<a href="' . admin_url( 'options-general.php?page=wp-udemy' ) . '">' . esc_html__( 'Settings', 'wp-udemy' ) . '</a>';
+    $settings_link = '<a href="' . admin_url( 'options-general.php?page=wp-udemy-dvsn' ) . '">' . esc_html__( 'Settings', 'wp-udemy-dvsn' ) . '</a>';
 
-    if ( $file == 'wp-udemy/wp-udemy.php' )
+    if ( $file == 'wp-udemy-dvsn/wp-udemy-dvsn.php' )
         array_unshift( $links, $settings_link );
 
     return $links;
@@ -40,7 +40,7 @@ add_filter( 'plugin_action_links', 'ufwp_action_links', 10, 2 );
  */
 function ufwp_row_meta( $input, $file ) {
 
-    if ( $file != 'wp-udemy/wp-udemy.php' )
+    if ( $file != 'wp-udemy-dvsn/wp-udemy-dvsn.php' )
         return $input;
 
     $docs_link = esc_url( add_query_arg( array(
@@ -51,7 +51,7 @@ function ufwp_row_meta( $input, $file ) {
     );
 
     $links = array(
-        '<a href="' . $docs_link . '">' . esc_html__( 'Documentation', 'wp-udemy' ) . '</a>',
+        '<a href="' . $docs_link . '">' . esc_html__( 'Documentation', 'wp-udemy-dvsn' ) . '</a>',
     );
 
     $input = array_merge( $input, $links );

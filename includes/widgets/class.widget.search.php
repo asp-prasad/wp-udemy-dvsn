@@ -24,8 +24,8 @@ if ( ! class_exists( 'UFWP_Search_Widget' ) ) {
         function __construct() {
             parent::__construct(
                 'ufwp_search_widget', // Base ID
-                __( 'UFWP - Search', 'wp-udemy' ), // Name
-                array( 'description' => __( 'Searching for courses by keyword or category.', 'wp-udemy' ), ) // Args
+                __( 'UFWP - Search', 'wp-udemy-dvsn' ), // Name
+                array( 'description' => __( 'Searching for courses by keyword or category.', 'wp-udemy-dvsn' ), ) // Args
             );
         }
 
@@ -46,7 +46,7 @@ if ( ! class_exists( 'UFWP_Search_Widget' ) ) {
             }
 
             if ( empty( $instance['keywords'] ) ) {
-                esc_html_e( 'Keyword missing.', 'wp-udemy' );
+                esc_html_e( 'Keyword missing.', 'wp-udemy-dvsn' );
             }
     
             if ( ! empty( $instance['keywords'] ) ) {
@@ -110,26 +110,26 @@ if ( ! class_exists( 'UFWP_Search_Widget' ) ) {
             $style           = ! empty( $instance['style'] ) ? $instance['style'] : '';
             ?>
             <p>
-                <label for="<?php esc_attr_e( $this->get_field_id( 'title' ) ); ?>"><?php _e( esc_attr( 'Title:' ), 'wp-udemy' ); ?></label>
+                <label for="<?php esc_attr_e( $this->get_field_id( 'title' ) ); ?>"><?php _e( esc_attr( 'Title:' ), 'wp-udemy-dvsn' ); ?></label>
                 <input class="widefat" id="<?php esc_attr_e( $this->get_field_id( 'title' ) ); ?>" name="<?php esc_attr_e( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php esc_attr_e( $title ); ?>">
             </p>
             <p>
-                <label for="<?php esc_attr_e( $this->get_field_id( 'keywords' ) ); ?>"><?php _e( 'Keywords:', 'wp-udemy' ); ?></label>
+                <label for="<?php esc_attr_e( $this->get_field_id( 'keywords' ) ); ?>"><?php _e( 'Keywords:', 'wp-udemy-dvsn' ); ?></label>
                 <input class="widefat" id="<?php esc_attr_e( $this->get_field_id( 'keywords' ) ); ?>" name="<?php esc_attr_e( $this->get_field_name( 'keywords' ) ); ?>" type="text" value="<?php esc_attr_e( $keywords ); ?>">
             </p>
             <p>
-                <label for="<?php esc_attr_e( $this->get_field_id( 'items' ) ); ?>"><?php _e( 'Items:', 'wp-udemy' ); ?></label>
+                <label for="<?php esc_attr_e( $this->get_field_id( 'items' ) ); ?>"><?php _e( 'Items:', 'wp-udemy-dvsn' ); ?></label>
                 <input class="widefat" id="<?php esc_attr_e( $this->get_field_id( 'items' ) ); ?>" name="<?php esc_attr_e( $this->get_field_name( 'items' ) ); ?>" type="number" value="<?php esc_attr_e( $items ); ?>">
             </p>
             <?php
             $orderby_options = array(
-                'sales'  => __( 'Sales', 'wp-udemy' ),
-                'date'   => __( 'Date', 'wp-udemy' ),
-                'trends' => __( 'Trends', 'wp-udemy' )
+                'sales'  => __( 'Sales', 'wp-udemy-dvsn' ),
+                'date'   => __( 'Date', 'wp-udemy-dvsn' ),
+                'trends' => __( 'Trends', 'wp-udemy-dvsn' )
             );
             ?>
             <p>
-                <label for="<?php esc_attr_e( $this->get_field_id( 'orderby' ) ); ?>"><?php _e( 'Order by:', 'wp-udemy' ); ?></label>
+                <label for="<?php esc_attr_e( $this->get_field_id( 'orderby' ) ); ?>"><?php _e( 'Order by:', 'wp-udemy-dvsn' ); ?></label>
                 <select class="widefat" id="<?php esc_attr_e( $this->get_field_id( 'orderby' ) ); ?>" name="<?php esc_attr_e( $this->get_field_name( 'orderby' ) ); ?>">
                     <?php foreach ( $orderby_options as $key => $label ) { ?>
                         <option value="<?php echo $key; ?>" <?php selected( $orderby, $key ); ?>><?php echo $label; ?></option>
@@ -138,17 +138,17 @@ if ( ! class_exists( 'UFWP_Search_Widget' ) ) {
             </p>
             <?php
             $lang_options = array(
-                ''   => __( 'All', 'wp-udemy' ),
-                'en' => __( 'English', 'wp-udemy' ),
-                'fr' => __( 'French', 'wp-udemy' ),
-                'de' => __( 'German', 'wp-udemy' ),
-                'it' => __( 'Italian', 'wp-udemy' ),
-                'es' => __( 'Spanish', 'wp-udemy' ),
-                'ru' => __( 'Russian', 'wp-udemy')
+                ''   => __( 'All', 'wp-udemy-dvsn' ),
+                'en' => __( 'English', 'wp-udemy-dvsn' ),
+                'fr' => __( 'French', 'wp-udemy-dvsn' ),
+                'de' => __( 'German', 'wp-udemy-dvsn' ),
+                'it' => __( 'Italian', 'wp-udemy-dvsn' ),
+                'es' => __( 'Spanish', 'wp-udemy-dvsn' ),
+                'ru' => __( 'Russian', 'wp-udemy-dvsn')
             );
             ?>
             <p>
-                <label for="<?php esc_attr_e( $this->get_field_id( 'lang' ) ); ?>"><?php _e( 'Language:', 'wp-udemy' ); ?></label>
+                <label for="<?php esc_attr_e( $this->get_field_id( 'lang' ) ); ?>"><?php _e( 'Language:', 'wp-udemy-dvsn' ); ?></label>
                 <select class="widefat" id="<?php esc_attr_e( $this->get_field_id( 'lang' ) ); ?>" name="<?php esc_attr_e( $this->get_field_name( 'lang' ) ); ?>">
                     <?php foreach ( $lang_options as $key => $label ) { ?>
                         <option value="<?php echo $key; ?>" <?php selected( $lang, $key ); ?>><?php echo $label; ?></option>
@@ -157,12 +157,12 @@ if ( ! class_exists( 'UFWP_Search_Widget' ) ) {
             </p>
             <?php
             $templates = array(
-                'widget'       => __( 'Standard', 'wp-udemy' ),
-                'widget_small' => __( 'Small', 'wp-udemy')
+                'widget'       => __( 'Standard', 'wp-udemy-dvsn' ),
+                'widget_small' => __( 'Small', 'wp-udemy-dvsn')
             );
             ?>
             <p>
-                <label for="<?php esc_attr_e( $this->get_field_id( 'template' ) ); ?>"><?php _e( 'Template:', 'wp-udemy' ); ?></label>
+                <label for="<?php esc_attr_e( $this->get_field_id( 'template' ) ); ?>"><?php _e( 'Template:', 'wp-udemy-dvsn' ); ?></label>
                 <select class="widefat" id="<?php esc_attr_e( $this->get_field_id( 'template' ) ); ?>" name="<?php esc_attr_e( $this->get_field_name( 'template' ) ); ?>">
                     <?php foreach ( $templates as $key => $label ) { ?>
                         <option value="<?php echo $key; ?>" <?php selected( $template, $key ); ?>><?php echo $label; ?></option>
@@ -170,27 +170,27 @@ if ( ! class_exists( 'UFWP_Search_Widget' ) ) {
                 </select>
                 <br />
                 <small>
-                    <?php esc_attr_e( 'The templates listed above are optimized for widgets.', 'wp-udemy' ); ?>
+                    <?php esc_attr_e( 'The templates listed above are optimized for widgets.', 'wp-udemy-dvsn' ); ?>
                 </small>
             </p>
             <p>
-                <label for="<?php esc_attr_e( $this->get_field_id( 'template_custom' ) ); ?>"><?php esc_attr_e( 'Custom Template:', 'wp-udemy' ); ?></label>
+                <label for="<?php esc_attr_e( $this->get_field_id( 'template_custom' ) ); ?>"><?php esc_attr_e( 'Custom Template:', 'wp-udemy-dvsn' ); ?></label>
                 <input class="widefat" id="<?php esc_attr_e( $this->get_field_id( 'template_custom' ) ); ?>" name="<?php esc_attr_e( $this->get_field_name( 'template_custom' ) ); ?>" type="text" value="<?php esc_attr_e( $template_custom ); ?>">
                 <br />
                 <small>
-                    <?php _e( 'You can use another template by entering the the name: e.g. <strong>my_widget</strong>.', 'wp-udemy' ); ?>
+                    <?php _e( 'You can use another template by entering the the name: e.g. <strong>my_widget</strong>.', 'wp-udemy-dvsn' ); ?>
                 </small>
             </p>
             <?php
             $styles = array(
-                ''      => __( 'Standard', 'wp-udemy' ),
-                'clean' => __( 'Clean', 'wp-udemy' ),
-                'light' => __( 'Light', 'wp-udemy' ),
-                'dark'  => __( 'Dark', 'wp-udemy')
+                ''      => __( 'Standard', 'wp-udemy-dvsn' ),
+                'clean' => __( 'Clean', 'wp-udemy-dvsn' ),
+                'light' => __( 'Light', 'wp-udemy-dvsn' ),
+                'dark'  => __( 'Dark', 'wp-udemy-dvsn')
             );
             ?>
             <p>
-                <label for="<?php esc_attr_e( $this->get_field_id( 'style' ) ); ?>"><?php _e( 'Style:', 'wp-udemy' ); ?></label>
+                <label for="<?php esc_attr_e( $this->get_field_id( 'style' ) ); ?>"><?php _e( 'Style:', 'wp-udemy-dvsn' ); ?></label>
                 <select class="widefat" id="<?php esc_attr_e( $this->get_field_id( 'style' ) ); ?>" name="<?php esc_attr_e( $this->get_field_name( 'style' ) ); ?>">
                     <?php foreach ( $styles as $key => $label ) { ?>
                         <option value="<?php echo $key; ?>" <?php selected( $style, $key ); ?>><?php echo $label; ?></option>

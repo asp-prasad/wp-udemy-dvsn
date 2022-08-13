@@ -1,5 +1,5 @@
 {
-  "name": "wp-udemy",
+  "name": "wp-udemy-dvsn",
   "version": "1.3.0",
   "private": true,
   "description": "Online Learning Courses WordPress Plugin",
@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/flowdee/wp-udemy"
+    "url": "https://github.com/asp-prasad/wp-udemy-dvsn"
   },
   "scripts": {
     "development": "mix",

@@ -23,8 +23,8 @@ With Online Learning Courses you can display single courses by their ID or even 
 *   Select between the following styles: Standard, Clean, Light & Dark
 *   Two separate widgets for single courses and searches
 *   Configuration page for more options
-*   Try out the **[online demo](https://kryptonitewp.com/demo/wp-udemy/)**
-*   Regular updates and improvements: Go though the [changelog](https://wordpress.org/plugins/wp-udemy/changelog/)
+*   Try out the **[online demo](https://kryptonitewp.com/demo/wp-udemy-dvsn/)**
+*   Regular updates and improvements: Go though the [changelog](https://wordpress.org/plugins/wp-udemy-dvsn/changelog/)
 
 = Quickstart Examples =
 
@@ -42,12 +42,12 @@ The PRO version extends this plugins exclusively with our affiliate link feature
 *   Highlight New Courses
 *   Custom Templates
 
-Details and upgrade can be found **[here](https://kryptonitewp.com/downloads/wp-udemy-pro/?utm_source=wordpress.org&utm_medium=textlink&utm_campaign=Online%20Learning%20Courses&utm_content=plugin-page)**.
+Details and upgrade can be found **[here](https://kryptonitewp.com/downloads/wp-udemy-dvsn-pro/?utm_source=wordpress.org&utm_medium=textlink&utm_campaign=Online%20Learning%20Courses&utm_content=plugin-page)**.
 
 = Support =
 
 * Detailed online [documentation](https://kryptonitewp.com/support/knb/online-learning-courses-documentation/)
-* Browse [issue tracker](https://github.com/flowdee/wp-udemy/issues) on GitHub
+* Browse [issue tracker](https://github.com/flowdee/wp-udemy-dvsn/issues) on GitHub
 * [Follow me on Twitter](https://twitter.com/flowdee) to stay in contact and informed about updates
 
 = Credits =
